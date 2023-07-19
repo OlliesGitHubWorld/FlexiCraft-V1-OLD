@@ -1,0 +1,39 @@
+name: FlexiCraft
+version: '1.0'
+main: me.flexicraft.FlexiCraft
+api-version: '1.20'
+commands:
+  ban:
+    description: Ban a player from the server.
+    usage: /ban <player> [reason]
+  unban:
+    description: Unban a player from the ban list.
+    usage: /unban <player>
+  kick:
+    description: Kick a player from the server.
+    usage: /kick <player> [reason]
+  fly:
+    description: Fly free like a bird.
+    usage: /fly
+  clear:
+    description: Clear your inventory.
+    usage: /clear
+  flexicraft:
+    description: FlexiCraft plugin commands.
+    usage: /flexicraft <subcommand> [arguments]
+    subcommands:
+      reload:
+        description: Reload the config file.
+        usage: /flexicraft reload
+      help:
+        description: Give help for the commands.
+        usage: /help
+  mute:
+    description: Mute a player from the chat.
+    usage: /flexicraft mute <player>
+  unmute:
+    description: Unmute a player in the chat.
+    usage: /flexicraft unmute <player>
+  repair:
+    description: Repair a item that is broken.
+    usage: /item

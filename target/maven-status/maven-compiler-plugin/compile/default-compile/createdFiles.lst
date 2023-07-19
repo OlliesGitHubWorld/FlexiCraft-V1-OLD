@@ -1,0 +1,5 @@
+me\flexicraft\commands\Help.class
+me\flexicraft\commands\Kick.class
+me\flexicraft\listeners\ChatListener.class
+me\flexicraft\commands\Fly.class
+me\flexicraft\commands\Unban.class
