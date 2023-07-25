@@ -27,10 +27,11 @@ commands:
         usage: /flexicraft reload
       help:
         description: Give help for the commands.
-        usage: /help
+        usage: /flexicraft help
   mute:
     description: Mute a player from the chat.
     usage: /flexicraft mute <player>
+    permission: flexicraft.mute
   unmute:
     description: Unmute a player in the chat.
     usage: /flexicraft unmute <player>

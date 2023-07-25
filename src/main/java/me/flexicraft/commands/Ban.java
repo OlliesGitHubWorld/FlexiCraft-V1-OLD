@@ -1,7 +1,6 @@
 package me.flexicraft.commands;
 
 import me.flexicraft.FlexiCraft;
-import org.bukkit.BanList;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -48,8 +47,7 @@ public class Ban implements CommandExecutor {
         System.arraycopy(args, 1, reasonArgs, 0, args.length - 1);
         String reason = String.join(" ", reasonArgs);
 
-        BanList banList = Bukkit.getBanList(BanList.Type.NAME);
-        banList.addBan(playerName, reason, null, null);
+        Bukkit.getBanList(org.bukkit.BanList.Type.NAME).addBan(targetPlayer.getName(), reason, null, null);
         targetPlayer.kickPlayer(reason);
 
         String banMessage = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("ban-server-message"))

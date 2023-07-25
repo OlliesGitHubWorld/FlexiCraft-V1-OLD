@@ -1,5 +1,12 @@
-me\flexicraft\commands\Help.class
-me\flexicraft\commands\Kick.class
-me\flexicraft\listeners\ChatListener.class
+me\flexicraft\commands\Clear.class
+me\flexicraft\commands\Unmute.class
+me\flexicraft\listeners\JoinLeaveListener.class
 me\flexicraft\commands\Fly.class
+me\flexicraft\commands\Mute.class
+me\flexicraft\commands\Kick.class
+me\flexicraft\commands\Repair.class
+me\flexicraft\commands\Ban.class
+me\flexicraft\util\MuteConfigManager.class
+me\flexicraft\FlexiCraft.class
+me\flexicraft\util\FlexiCraftTabCompleter.class
 me\flexicraft\commands\Unban.class

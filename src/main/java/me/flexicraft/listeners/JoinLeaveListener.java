@@ -1,4 +1,4 @@
-package me.flexicraft.util;
+package me.flexicraft.listeners;
 
 import me.flexicraft.FlexiCraft;
 import org.bukkit.ChatColor;
