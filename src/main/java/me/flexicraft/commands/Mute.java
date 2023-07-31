@@ -53,12 +53,12 @@ public class Mute implements CommandExecutor {
         String reason = args.length > 1 ? String.join(" ", args).substring(args[0].length() + 1) : "No reason provided.";
 
         if (mutedPlayers.contains(target.getUniqueId())) {
-            sender.sendMessage(ChatColor.YELLOW + target.getName() + " is already muted.");
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("mute-player-already-muted")).replace("%target-player%", target.getName()));
         } else {
             mutedPlayers.add(target.getUniqueId());
             saveMutedPlayers();
-            sender.sendMessage(ChatColor.YELLOW + target.getName() + " has been muted. Reason: " + reason);
-            target.sendMessage(ChatColor.YELLOW + "You have been muted. Reason: " + reason);
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("mute-player-muted")).replace("%target-player%", target.getName()).replace("%reason%", reason));
+            target.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("mute-player")).replace("%reason%", reason));
         }
 
         return true;

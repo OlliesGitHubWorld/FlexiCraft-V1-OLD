@@ -36,11 +36,16 @@ kick-message: '&eFlexi&6Craft &7>> %target-player% has been &ckicked &7for: %rea
 mute-no-perms: '&eFlexi&6Craft &7>> &cYou have no permissions for the mute command!'
 mute-usage: '&eFlexi&6Craft &7>> &cUsage: /mute <player> <Reason>'
 mute-no-player: '&eFlexi&6Craft &7>> &cPlayer not found!'
+mute-player: '&eFlexi&6Craft &7>> You are &cmuted &7for %reason%.'
+mute-player-muted: '&eFlexi&6Craft &7>> %target-player% is &cmuted &7for %reason%.'
 mute-chat-message: '&eFlexi&6Craft &7>> &cYou are not able to type while being muted!'
+mute-player-already-muted: '&eFlexi&6Craft &7>> %target-player% is already muted.'
 unmute-no-perms: '&eFlexi&6Craft &7>> &cYou have no permissions for the unmute command!'
 unmute-usage: '&eFlexi&6Craft &7>> &cUsage: /mute <player> <Reason>'
 unmute-no-player: '&eFlexi&6Craft &7>> &cPlayer not found!'
 unmute-player-not-muted: '&eFlexi&6Craft &7>>&c %target-player% is not muted!'
+unmute-unmuted: '&eFlexi&6Craft &7>> You have been &aunmuted'
+unmute-player-unmuted: '&eFlexi&6Craft &7>> %target-player% has been &aunmuted.'
 
 
 # Fly messages

@@ -55,8 +55,8 @@ public class Unmute implements CommandExecutor {
         } else {
             mutedPlayers.remove(target.getUniqueId());
             saveMutedPlayers();
-            sender.sendMessage(ChatColor.YELLOW + target.getName() + " has been unmuted.");
-            target.sendMessage(ChatColor.YELLOW + "You have been unmuted.");
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("unmute-player-unmuted").replace("%target-player%", target.getName())));
+            target.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("unmute-unmuted")));
         }
 
         return true;
